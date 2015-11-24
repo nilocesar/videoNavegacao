@@ -1,0 +1,23 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #000;
+}
+
+#bkg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}

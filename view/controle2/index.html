@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Controle1</title>
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" href="css/controle2.css">
+
+    <script src="../../js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../../js/vendor/videoApi.js"></script>
+    <script src="../../js/vendor/bigvideo.js"></script>
+    <script src="../../js/vendor/modernizrReset.js"></script>
+
+
+</head>
+
+<body>
+    <div id="bkg"> </div>
+
+    <script>
+        var infoVideo = {};
+        var _currentVideo = parent.course.currentVideo - 1; // Aq ele esta considerando o próximo video
+        infoVideo.loop = parent.course.modulosData["config"]["loop"];
+        //infoVideo.path = parent.course.modulosData["config"]["main"]["path"];
+
+        infoVideo.start = parent.course.modulosData["config"]["times"][_currentVideo].start;
+        infoVideo.thumb = "../../"+ parent.course.modulosData["config"]["times"][_currentVideo].thumbNarrador;
+        infoVideo.pop1Init = parent.course.modulosData["config"]["times"][_currentVideo].pop1Init;
+        infoVideo.pop1End = parent.course.modulosData["config"]["times"][_currentVideo].pop1End;
+        infoVideo.pop2Init = parent.course.modulosData["config"]["times"][_currentVideo].pop2Init;
+
+        $(window).load(function () {
+            $('#bkg').css('background-image', "url(" + infoVideo.thumb + ")");
+
+            $(window).bind("load resize", function () {
+                $('#bkg').width($('body').width());
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>

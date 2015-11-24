@@ -1,0 +1,25 @@
+{
+    "config": {
+        "main": {
+            "path": "https://player.vimeo.com/external/145385675.hd.mp4?s=8c7fb86d232b9b9df6d227508f8e91fdcea026eb&profile_id=113",
+            "thumb": ""
+        },
+
+        "times": [{
+            "path": "https://player.vimeo.com/external/145385674.hd.mp4?s=48e62ccc63eb4b7738a9a0e0f5e13fdd243e7a10&profile_id=113",
+            "thumbNarrador": "img/thumb1.jpg",
+            "thumbTema": "img/thumbTema1.jpg",
+            "pop1Init": 21,
+            "pop1End": 25,
+            "pop2Init": 27.3
+        }, {
+            "path": "https://player.vimeo.com/external/145385676.hd.mp4?s=768a34450dd3af00b4590d598dedbcb215e1d2e5&profile_id=113",
+            "thumbNarrador": "img/thumb2.jpg",
+            "thumbTema": "img/thumbTema2.jpg",
+            "pop1Init": 90,
+            "pop1End": 101,
+            "pop2Init": 104
+        }],
+        "loop": 10
+    }
+}

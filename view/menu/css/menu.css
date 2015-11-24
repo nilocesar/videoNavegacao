@@ -1,0 +1,55 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.menuContainer {
+    position: absolute;
+    width: 600px;
+}
+
+.btn {
+    position: absolute;
+    width: 207px;
+    height: 207px;
+    cursor: pointer;
+}
+
+.btnInativo{
+    opacity: 0.2;
+    cursor: default;
+}
+
+#btn1 {
+    background-image: url(../img/btn1.png);
+}
+
+#btn2 {
+    left: 200px;
+    background-image: url(../img/btn2.png);
+}
+
+#btn3 {
+    left: 400px;
+    background-image: url(../img/btn3.png);
+}
+
+#btn4 {
+    top: 200px;
+    background-image: url(../img/btn4.png);
+}
+
+#btn5 {
+    top: 200px;
+    left: 200px;
+    background-image: url(../img/btn5.png);
+}
+
+#btn6 {
+    top: 200px;
+    left: 400px;
+    background-image: url(../img/btn6.png);
+}
